@@ -1,3 +1,15 @@
 document.getElementById('login-button').addEventListener('click', function(){
-    console.log('button Clicked');
+    const emailField = document.getElementById('user-email');
+    const userEmail = emailField.value;
+
+    // get user password
+    const passwordField = document.getElementById('user-password');
+    const userPassword = passwordField.value;
+
+    if(userEmail == 'sontan@bap.com' && userPassword == 'nice'){
+        window.location.href = 'banking.html'
+    }
+    else{
+        console.log('Not a valid user');
+    }
 })
