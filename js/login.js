@@ -10,6 +10,6 @@ document.getElementById('login-button').addEventListener('click', function(){
         window.location.href = 'banking.html'
     }
     else{
-        console.log('Not a valid user');
+        document.getElementById('varification-failed').style.display = "block";
     }
 })

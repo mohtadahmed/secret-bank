@@ -8,6 +8,14 @@
     <title>Bank Deposition and Withdrawal</title>
     <!-- Tailwind CSS CDN -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Style Added -->
+    <style>
+        .varify-alert {
+            color: red;
+            display: none;
+            margin-top: 25px;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,6 +32,7 @@
                 <input class="border border-gray-400 rounded px-4 py-1 block w-1/2 mx-auto" id="user-password"
                     type="password" name="" id="" placeholder="Enter password">
                 <button class="bg-red-400 py-2 px-4 mt-4 rounded" id="login-button">Log in</button>
+                <h5 id="varification-failed" class="varify-alert">Email or Password is incorrect</h5>
             </div>
         </section>
     </main>
