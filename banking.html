@@ -11,24 +11,45 @@
 </head>
 
 <body>
-    <h1 class="text-5xl text-center my-10">Welcome to the Secret Bank of Commerce</h1>
+    <header>
+        <h1 class="text-5xl text-center my-32">Welcome to the <span class="text-red-600">Secret Bank of
+                Commerce!!!</span></h1>
+    </header>
 
-    <section class="w-3/4">
-        <div class="grid-cols-3 flex text-center mx-auto">
-            <div class="bg-yellow-300 p-10">
-                <h2>Deposit</h2>
-                <h4>$00</h4>
+    <main>
+        <section class="w-3/4 mx-auto">
+            <div class="grid grid-cols-3 text-white gap-10 text-center">
+                <div class="bg-purple-600 p-10 rounded-2xl">
+                    <h2 class="text-3xl">Deposit</h2>
+                    <h4 class="text-4xl">$<span>00</span> </h4>
+                </div>
+                <div class="bg-red-400 p-10 rounded-2xl">
+                    <h2 class="text-3xl">Withdraw</h2>
+                    <h4 class="text-4xl">$<span>00</span> </h4>
+                </div>
+                <div class="bg-blue-500 p-10 rounded-2xl">
+                    <h2 class="text-3xl">Balance</h2>
+                    <h4 class="text-4xl">$<span>1240</span> </h4>
+                </div>
             </div>
-            <div class="bg-yellow-300 p-10">
-                <h2>Deposit</h2>
-                <h4>$00</h4>
+        </section>
+        <section class="w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-10 mt-12">
+                <div class="bg-yellow-200 rounded-2xl py-10 text-center">
+                    <h2 class="text-4xl mb-3">Deposit Amount</h2>
+                    <input class="border border-gray-400 rounded px-4 py-1 block mb-3 mx-auto w-1/2" type="text"
+                        placeholder="Enter Your Deposited Amount">
+                    <button class="bg-black text-white py-2 px-4 rounded" id="login-button">Deposit</button>
+                </div>
+                <div class="bg-green-300 rounded-2xl py-10 text-center">
+                    <h2 class="text-4xl mb-3">Withdraw Amount</h2>
+                    <input class="border border-gray-400 rounded px-4 py-1 block mb-3 mx-auto w-1/2" type="text"
+                        placeholder="Enter Your Withdraw Amount">
+                    <button class="bg-white py-2 px-4 rounded" id="login-button">Withdraw</button>
+                </div>
             </div>
-            <div class="bg-yellow-300 p-10">
-                <h2>Deposit</h2>
-                <h4>$00</h4>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <script src="js/banking.js"></script>
 </body>
